@@ -13,7 +13,6 @@ def init_model():
     return QuestionAnswering()
 
 def main():
-    st.title('Question-Answering systems')
     model = init_model()
 
     lg_options = st.selectbox('Langue / Language',
@@ -21,12 +20,15 @@ def main():
 
 
     if lg_options == "en":
+        st.title('Question-Answering systems')
         progess_message = "Predicting ..."
         sucess_message = "Done !"
         context = st.text_area(label = "Context :")
         question = st.text_input(label = 'Question :', )
         answer = st.button("Answer")
     else:
+        st.title('Système de Question - Réponse')
+
         progess_message = "Prédictions en cours ..."
         sucess_message = "Terminé !"
 

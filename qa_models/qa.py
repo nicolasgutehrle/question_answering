@@ -14,7 +14,6 @@ class QuestionAnswering():
         """
         list_dir = os.listdir('models')
         list_dir = [x for x in list_dir if "." not in x]
-        # print("LIST DIR : >> ", [x for x in list_dir if os.path.isdir(x)])
         models = {dir: pipeline('question-answering', model="models/{}".format(dir),
                                 tokenizer="models/{}".format(dir)) for dir in list_dir}
         print(models)
