@@ -6,8 +6,12 @@ At the moment, only two models are available : one in English, the other in Fren
 
 This demo application runs with the *Streamlit* library. You can paste some text and ask a question to which the model will give an answer.
 
+# Requirements
+* Python >= 3.5
+
 ## Install
 * Clone this repo in the folder of your choice
-* Move into the clone repo and create a virtual environment with `python -m venv venv`
+* Move into the cloned repo and create a virtual environment with `python -m venv <name-of-environment>
+* Activate the environment with source `<name-of-environment>/bin/activate` or `conda activate <name-of-environment>`
 * Install the dependencies using `pip install -r requirements.txt`
 * Run the application with `streamlit run main.py`
