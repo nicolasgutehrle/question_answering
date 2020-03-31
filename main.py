@@ -38,6 +38,7 @@ def main():
         with st.spinner(progess_message):
             pred = model.question_answering(question=question, context = context, lg=lg_options)
 
+        print(pred)
         st.success(sucess_message)
         st.write(pred['answer'])
 
