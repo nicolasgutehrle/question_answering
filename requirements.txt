@@ -54,7 +54,7 @@ prometheus-client==0.7.1
 prompt-toolkit==3.0.5
 protobuf==3.11.3
 ptyprocess==0.6.0
-pydantic==1.4
+pydantic==1.6.2
 pydeck==0.3.0b3
 Pygments==2.6.1
 pyparsing==2.4.6
